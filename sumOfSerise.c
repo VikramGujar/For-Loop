@@ -12,20 +12,27 @@
 
 
 #include<stdio.h>
+
 int main()
 {
-    int num,sum=1,inr=1;
-    printf("Enetr number :");
-    scanf("%d",&num);
+    int num, sum = 0, inr = 0;
+    printf("Input the number of terms : ");
+    scanf("%d", &num);
 
-    for (int i= 1;i<=num; i++)
+    printf("Series: ");
+    for (int i = 1; i <= num; i++)
     {
+        inr = inr * 10 + 1;  
+        sum += inr;  
         
-        printf("%8d",inr);
-         
-         inr= inr*10+1;
-         sum=sum+inr*10+1;
+        
+        if (i == num)
+            printf("%d", inr);
+        else
+            printf("%d + ", inr);
     }
-       printf("\n The Sum is : %d",sum);
     
+    printf("\nThe Sum is : %d\n", sum);
+    
+    return 0;
 }
