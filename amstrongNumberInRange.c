@@ -1,6 +1,8 @@
-
-// Write a C program to find all strong numbers between 1 to 500
-// factorial sum of digits is equal to that number
+// Write a C program to find all Armstrong numbers between 100 to 999.
+// Sample Input
+// 153
+// Sample Output
+// 153 is an Armstrong number because (1)^3+(5)^3+(3)^3 = 153.
 
 
 #include <stdio.h>
@@ -8,8 +10,8 @@
 
 int main() 
 {
-    int num1,num2,rem,m,factorial,i,sum;
-    printf("Enter the rage to find strong numbers: ");
+    int num1,num2,rem,m,sum,i;
+    printf("Enter the rage to find Armstrong numbers: ");
     scanf("%d %d",&num1,&num2);
 
     for(i=num1;i<=num2;i++)
@@ -19,10 +21,7 @@ int main()
         for(;m!=0;m/=10)
         {
             rem=m%10;
-            for(;rem!=0;rem--){
-                factorial*=rem;
-            }
-            sum+=factorial;
+            sum+=rem*rem*rem;
         }
             if(sum==i)
             {

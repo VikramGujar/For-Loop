@@ -4,7 +4,7 @@
 int main()
 {
     int n1,n2,diviser;
-    printf("Enter the rage to find prime numbers");
+    printf("Enter the rage to find prime numbers: ");
     scanf("%d %d",&n1,&n2);
     printf("\n Prime Numbers are = ");
     for(n1;n1<=n2;n1++)
