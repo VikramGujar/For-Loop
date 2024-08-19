@@ -25,9 +25,10 @@ int main()
      a=0;  
         for (col=1;col<=colNum;col++)
         {
-            if(row>col){
+            if(row>col)
+            {
                 printf("%3d",a);
-            a= 1-a;
+                a= 1-a;
             }else
             printf(" ");
             

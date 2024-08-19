@@ -14,19 +14,17 @@
 
 
 #include<stdio.h>
-int main()
+void main()
 {
-    int row,col,rowNum,colNum,a,b,c;
-    printf("Enter number of row and column :");
-    scanf("%d %d",&rowNum,&colNum);
+    int r=5,c=0,a=1,i=0,j=0,k=0;
 
-    for (row=1;row<=rowNum;row++) {
-        a=0;
-        b=1;
-        for (col=1;col<=colNum;col++) {
-            printf("%d",col);
+    for(i=1;i<=r;i++)
+    {
+        for(j=1,k=r-1,a=i;j<=i;j++,k--)
+        {
+            printf("%d ",a);
+            a=a+k;
         }
-
+        printf("\n");
     }
-
 }

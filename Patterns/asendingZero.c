@@ -24,9 +24,12 @@ int main()
       
         for (col=1;col<=colNum;col++) 
         {
-            
+            if(col<row)
+            printf("0 ");
+            else
+            printf("%d ",col);
         }
-
+        printf("\n");
     }
 
 }
