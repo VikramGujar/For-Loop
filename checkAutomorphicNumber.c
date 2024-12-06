@@ -4,4 +4,3 @@
 // Sample Output
 // 25 is Automorphic number.
 
-#include
